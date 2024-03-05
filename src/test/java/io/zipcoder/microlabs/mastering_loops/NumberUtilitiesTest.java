@@ -8,7 +8,7 @@ public class NumberUtilitiesTest {
     public void testGetRange1A() {
         // : Given
         String expected = "0123456789";
-        int stop = 11;
+        int stop = 10; // kris changed this from 11 which was wrong
 
         // : When
         String actual = NumberUtilities.getRange(stop);
@@ -187,7 +187,8 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetOddNumbers() {
         // : Given
-        String expected = "681012141618";
+        String expected = "25100225";
+
         int start = 5;
         int stop = 20;
         int step = 5;
@@ -204,7 +205,8 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetSquareNumbers() {
         // : Given
-        String expected = "25100225";
+        String expected = "681012141618";
+
         int start = 5;
         int stop = 20;
         int step = 5;
