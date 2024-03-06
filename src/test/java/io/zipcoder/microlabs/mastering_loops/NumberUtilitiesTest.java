@@ -87,7 +87,8 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetRange3B() {
         // : Given
-        String expected = "100101103104105106107108109";
+        // 102 was missing
+        String expected = "100101102103104105106107108109";
         int start = 100;
         int stop = 110;
 
@@ -114,6 +115,7 @@ public class NumberUtilitiesTest {
     public void testGetRange1C() {
         // : Given
         String expected = "51015";
+        // stop was at 20\
         int start = 5;
         int stop = 20;
         int step = 5;
