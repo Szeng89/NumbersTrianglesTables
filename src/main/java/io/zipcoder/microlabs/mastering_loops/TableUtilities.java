@@ -39,7 +39,21 @@ public class TableUtilities {
         return sb2.toString();
     }
 
-    public static String getMultiplicationTable(int tableSize) {
-        return null;
+    public static String getMultiplicationTable(int tableize) {
+        StringBuilder sb3 = new StringBuilder();
+        for ( int i = 1; i <=20; i++){
+            for (int j = 1; j <= 20; j++){
+                int number = j * i;
+                if (number < 10){
+                    sb3.append("  "+ number +" " + "|");
+                }else if (number <= 99) {
+                    sb3.append(" " + number +" " + "|");
+                }else{
+                    sb3.append(number + " " + "|");
+                }
+            }
+            sb3.append("\n");
+        }
+        return sb3.toString();
     }
 }
