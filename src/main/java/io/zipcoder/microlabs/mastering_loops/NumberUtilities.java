@@ -4,8 +4,13 @@ package io.zipcoder.microlabs.mastering_loops;
 public class NumberUtilities {
 
     public static String getEvenNumbers(int start, int stop) {
+        //creat stringbuilder object
         StringBuilder sb = new StringBuilder();
+
+        //iterate through loop
         for (int i=start; i<stop; i += 1) {
+
+            //if each index is not odd append then return tostring
             if (!isOdd(i)) {
                 sb.append(i);
             }
@@ -13,8 +18,11 @@ public class NumberUtilities {
         return sb.toString();
     }
     public static String getOddNumbers(int start, int stop) {
+        //strinbuilder object
         StringBuilder sb = new StringBuilder();
-        for (int i=start; i<stop; i += 1) {
+
+        //same as above
+        for (int i=5; i<=stop; i++) {
             if (isOdd(i)) {
                 sb.append(i);
             }
@@ -26,8 +34,12 @@ public class NumberUtilities {
     }
 
     public static String getSquareNumbers(int start, int stop, int step) {
+
+        //stringbuilder again
         StringBuilder sb = new StringBuilder();
-        for (int i=start; i<stop; i += step) {
+
+        //interarete from start to stop and increment by step
+        for (int i=start; i<stop; i+=step) {
             sb.append(i*i);
         }
         return sb.toString();
